@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Static Template</title>
+
+    <style>
+      .container {
+        width: 25rem;
+
+        position: relative;
+      }
+
+      .video {
+        width: 100%;
+        height: auto;
+      }
+
+      .controller {
+        width: 100%;
+        height: 100%;
+
+        text-align: center;
+
+        position: absolute;
+        top: 0;
+      }
+
+      .buttom-controller {
+        width: 1.5rem;
+        padding: 5px;
+
+        position: relative;
+        top: 100%;
+        transform: translateY(-135%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <video id="video1" class="video" src="./Assets/videoplayback.mp4"></video>
+
+      <div class="controller">
+        <svg
+          class="buttom-controller"
+          onclick="retroceder()"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 100 100"
+        >
+          <g transform="matrix(7.142857142857143,0,0,7.142857142857143,0,0)">
+            <g>
+              <path
+                d="M13.5,10.29a.7.7,0,0,1-.37.62.71.71,0,0,1-.73,0L7.32,7.59a.7.7,0,0,1,0-1.18l5.08-3.3a.71.71,0,0,1,.73,0,.7.7,0,0,1,.37.62Z"
+                style="
+                  fill: none;
+                  stroke: #ffffff;
+                  stroke-linecap: round;
+                  stroke-linejoin: round;
+                "
+              ></path>
+              <path
+                d="M7,10.29a.7.7,0,0,1-.37.62.71.71,0,0,1-.73,0L.82,7.59a.7.7,0,0,1,0-1.18L5.9,3.11a.71.71,0,0,1,.73,0A.7.7,0,0,1,7,3.71Z"
+                style="
+                  fill: none;
+                  stroke: #ffffff;
+                  stroke-linecap: round;
+                  stroke-linejoin: round;
+                "
+              ></path>
+              <line
+                x1="0.5"
+                y1="2.5"
+                x2="0.5"
+                y2="11.5"
+                style="
+                  fill: none;
+                  stroke: #ffffff;
+                  stroke-linecap: round;
+                  stroke-linejoin: round;
+                "
+              ></line>
+            </g>
+          </g>
+        </svg>
+
+        <svg
+          class="buttom-controller"
+          onclick="play()"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 100 100"
+        >
+          <g transform="matrix(7.142857142857143,0,0,7.142857142857143,0,0)">
+            <path
+              d="M1.5,12.35a1.14,1.14,0,0,0,.63,1,1.24,1.24,0,0,0,1.22,0L12,8A1.11,1.11,0,0,0,12,6L3.35.69a1.24,1.24,0,0,0-1.22,0,1.14,1.14,0,0,0-.63,1Z"
+              style="
+                fill: none;
+                stroke: #ffffff;
+                stroke-linecap: round;
+                stroke-linejoin: round;
+              "
+            ></path>
+          </g>
+        </svg>
+
+        <svg
+          class="buttom-controller"
+          onclick="stop()"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 100 100"
+        >
+          <g transform="matrix(7.142857142857143,0,0,7.142857142857143,0,0)">
+            <rect
+              x="0.5"
+              y="0.52"
+              width="13"
+              height="13"
+              rx="1"
+              style="
+                fill: none;
+                stroke: #ffffff;
+                stroke-linecap: round;
+                stroke-linejoin: round;
+              "
+            ></rect>
+          </g>
+        </svg>
+
+        <svg
+          class="buttom-controller"
+          onclick="avancar()"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 100 100"
+        >
+          <g transform="matrix(7.142857142857143,0,0,7.142857142857143,0,0)">
+            <g>
+              <path
+                d="M.5,10.29a.7.7,0,0,0,.37.62.71.71,0,0,0,.73,0l5.08-3.3a.7.7,0,0,0,0-1.18L1.6,3.11a.71.71,0,0,0-.73,0,.7.7,0,0,0-.37.62Z"
+                style="
+                  fill: none;
+                  stroke: #ffffff;
+                  stroke-linecap: round;
+                  stroke-linejoin: round;
+                "
+              ></path>
+              <path
+                d="M7,10.29a.7.7,0,0,0,.37.62.71.71,0,0,0,.73,0l5.08-3.3a.7.7,0,0,0,0-1.18L8.1,3.11a.71.71,0,0,0-.73,0A.7.7,0,0,0,7,3.71Z"
+                style="
+                  fill: none;
+                  stroke: #ffffff;
+                  stroke-linecap: round;
+                  stroke-linejoin: round;
+                "
+              ></path>
+              <line
+                x1="13.5"
+                y1="2.5"
+                x2="13.5"
+                y2="11.5"
+                style="
+                  fill: none;
+                  stroke: #ffffff;
+                  stroke-linecap: round;
+                  stroke-linejoin: round;
+                "
+              ></line>
+            </g>
+          </g>
+        </svg>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
